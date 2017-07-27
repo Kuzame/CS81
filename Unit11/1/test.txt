@@ -1,2 +1,2 @@
-Write a short explanation of what is Node.js and how is it related to JavaScript.
-The type attribute (type="text/javascript") is mainly to determine/tell the html that we are fetching a JavaScript file (however, only older version of HTML actually requires this. The latest html would already set the default type to "text/javascript"). The src (src=”js/filename.js”) is the location source of the JavaScript file that we want the html to use.
+﻿Write a short explanation of what is Node.js and how is it related to JavaScript.
+Node.js is a framework or environment (which is open source and free) that uses JavaScript on the server. It is able to open a file on the server and return the content to the client (the output for ex). It's a JavaScript runtime, in a sense so that we don't have to use a browser to test the JavaScript code.
