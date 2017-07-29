@@ -1,5 +1,6 @@
 /**
  * Created by AdrianH on 7/28/2017.
+ * Proudly presents my calculation on the animation's speed for the fun & balance of the game
  */
 
 var winning=1;
@@ -14,10 +15,23 @@ function Chocobo(name, image, min, max) {
 	this.position=0;
 	this.interval=0;
 	this.speed=0;
-	this.baseSpeed=51-max;
-	this.speedRange= max-min;
 	this.win=0;
 	this.wager=0;
+	this.baseSpeed=51-max; 
+	this.speedRange= max-min; 
+	/* How do I calculate/convert the displayed mph VS the actual number that will be use
+		50mph -> 1
+		40mph -> 11
+		30mph -> 21
+		21mph -> 30
+
+		51-[##mph] -> #
+		mph   -> [speedRange] & [baseSpeed]
+		33-40 -> 8 & 11
+		29-43 -> 22 & 8
+		27-35 ... etc
+		21-25
+	*/
 }
 
 var Boco = new Chocobo("Boco", "Normal", 33, 40);
