@@ -35,7 +35,7 @@ function Chocobo(name, image, min, max) {
 }
 
 var Boco = new Chocobo("Boco", "Normal", 33, 40);
-var Betty = new Chocobo("Betty", "Green", 28, 42);
+var Betty = new Chocobo("Betty", "Green", 29, 43);
 var Kuro = new Chocobo("Kuro", "Black", 27, 35);
 var Berserker = new Chocobo("Berserker", "Red", 21, 25);
 
