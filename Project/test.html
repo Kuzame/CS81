@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Chocobo Races Betting</title>
+	<link rel="stylesheet" href="farm.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div style="text-align: center; margin: 5pt auto">
+			<div class="shadow" style="width: 100%;">
+				<div style="width: 100%; height: 61px; background-color: rgb(85,85,85);">
+						<div id="panel" style="float: left; width: 100%; color: white; text-align: center; font-family: 'Trebuchet MS'; font-weight:bold; font-size: medium;"><h2>Bet on your favorite chocobo! (Hover to see its stats)</h2>
+						</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="farm">
+		<img src="pic/FinishLine.png" style="float:right">
+		<div class="tooltip">
+			<img src="pic/1Normal.png" width="70" height="77" id="Normal" style="position:relative;">
+			<span class="tooltiptext">Boco [30-40mph]<br>Specialty: Balance</span>
+		</div>
+
+		<p></p>
+		<div class="tooltip">
+		<img src="pic/1Green.png" width="70" height= "77" id="Green" style="position:relative;">
+			<span class="tooltiptext">Betty [28-42mph]<br>Specialty: Balance</span>
+		</div>
+
+		<p></p>
+		<div class="tooltip">
+			<img src="pic/1Red.png" width="70" height= "77" id="Red" style="position:relative;">
+			<span class="tooltiptext">Berserker [27-34mph]<br>Specialty: 50% to sprint an extra 10mph when speed is <30mph</span>
+		</div>
+
+	</div>
+
+	<div style="text-align:center;">
+		<p> Current balance: $<input type="text" id="balance" size="1" value="100" style="text-align:right; background-color: rgb(220, 220, 220)" readonly/></p>
+		<p> Enter money to bet: <input type="number" id="betInput" value="10" max="100" style="text-align:right; width:40px"> </input></p>
+		<input onclick="clicking()" type="button" value="Start" id="moveButton" style="margin:5px"> </input>
+		<input onclick="starting()" type="button" value="Starting" id="startButton" style="margin:5px"> </input>
+		<input onclick="betting()" type="button" value="Betting" id="betButton" style="margin:5px"> </input>
+	</div>
+	<script src="code.js"></script>
+
+</body>
+</html>
